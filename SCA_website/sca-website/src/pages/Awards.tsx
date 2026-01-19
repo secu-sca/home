@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Trophy, Award as AwardIcon, Star, Medal, Mic, Bug, GraduationCap, Calendar } from 'lucide-react';
+import { Trophy, Medal, Mic, Bug, GraduationCap, Calendar } from 'lucide-react';
 import AwardCard from '../components/awards/AwardCard';
 import { DolphinIcon } from '../components/common/DolphinIcon';
 import awardsData from '../data/awards.json';

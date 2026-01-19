@@ -1,5 +1,5 @@
 import { Award } from '../../types';
-import { Trophy, Calendar, Mic, Bug, GraduationCap, Medal, Award as AwardIcon } from 'lucide-react';
+import { Trophy, Calendar, Mic, Bug, GraduationCap, Medal } from 'lucide-react';
 import { motion } from 'framer-motion';
 import InteractiveCard from '../common/InteractiveCard';
 
