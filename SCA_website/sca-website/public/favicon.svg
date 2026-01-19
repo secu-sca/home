@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="10" fill="#0f172a"/>
+  <text x="50" y="65" font-family="monospace" font-size="40" fill="#22d3ee" text-anchor="middle" font-weight="bold">SCA</text>
+  <rect x="15" y="75" width="70" height="3" fill="#22d3ee" opacity="0.5"/>
+</svg>

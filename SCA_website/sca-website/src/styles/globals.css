@@ -1,0 +1,489 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   🎨 SCA Pink Dolphin Theme - Color Tokens
+   ============================================ */
+:root {
+  /* Primary Pink Palette */
+  --pink-50: #fdf2f8;
+  --pink-100: #fce7f3;
+  --pink-200: #fbcfe8;
+  --pink-300: #f9a8d4;
+  --pink-400: #f472b6;
+  --pink-500: #ec4899;
+  --pink-600: #db2777;
+  --pink-700: #be185d;
+  --pink-800: #9d174d;
+  --pink-900: #831843;
+  
+  /* Accent Purple */
+  --purple-400: #c084fc;
+  --purple-500: #a855f7;
+  --purple-600: #9333ea;
+  
+  /* Dark Mode (Default) */
+  --color-primary: #f472b6;
+  --color-primary-light: #f9a8d4;
+  --color-primary-dark: #db2777;
+  --color-primary-glow: rgba(244, 114, 182, 0.4);
+  
+  --color-accent: #c084fc;
+  --color-accent-muted: #a855f7;
+  
+  --color-surface: #0c0a14;
+  --color-surface-elevated: #1a1625;
+  --color-surface-glass: rgba(26, 22, 37, 0.7);
+  
+  --color-text: #f8fafc;
+  --color-text-muted: #a1a1aa;
+  
+  --color-terminal-bg: #0a0812;
+  --color-terminal-text: #f9a8d4;
+  --color-terminal-prompt: #f472b6;
+  
+  --color-border: rgba(244, 114, 182, 0.2);
+  --color-border-glow: rgba(244, 114, 182, 0.5);
+  
+  /* Gradients */
+  --gradient-main: linear-gradient(135deg, #0c0a14 0%, #1a0a1e 50%, #0f0c18 100%);
+  --gradient-pink: linear-gradient(135deg, #f472b6 0%, #c084fc 100%);
+  --gradient-glow: radial-gradient(ellipse at center, rgba(244, 114, 182, 0.15) 0%, transparent 70%);
+}
+
+.light {
+  --color-primary: #db2777;
+  --color-primary-light: #f472b6;
+  --color-primary-dark: #be185d;
+  --color-primary-glow: rgba(219, 39, 119, 0.3);
+  
+  --color-accent: #9333ea;
+  --color-accent-muted: #a855f7;
+  
+  --color-surface: #fdf2f8;
+  --color-surface-elevated: #ffffff;
+  --color-surface-glass: rgba(255, 255, 255, 0.8);
+  
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+  
+  --color-terminal-bg: #1a1625;
+  --color-terminal-text: #f9a8d4;
+  --color-terminal-prompt: #f472b6;
+  
+  --color-border: rgba(219, 39, 119, 0.2);
+  --color-border-glow: rgba(219, 39, 119, 0.4);
+  
+  --gradient-main: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 50%, #f5f3ff 100%);
+  --gradient-pink: linear-gradient(135deg, #db2777 0%, #9333ea 100%);
+  --gradient-glow: radial-gradient(ellipse at center, rgba(219, 39, 119, 0.1) 0%, transparent 70%);
+}
+
+/* ============================================
+   📝 Base Styles
+   ============================================ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Pretendard', system-ui, -apple-system, sans-serif;
+  background: var(--gradient-main, #0c0a14);
+  background-color: #0c0a14;
+  color: var(--color-text, #f8fafc);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ============================================
+   🎭 Custom Scrollbar
+   ============================================ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-light);
+}
+
+/* ============================================
+   🖥️ Terminal Styles
+   ============================================ */
+.terminal {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  background-color: var(--color-terminal-bg);
+  border: 1px solid var(--color-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.terminal::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(244, 114, 182, 0.03) 2px,
+      rgba(244, 114, 182, 0.03) 4px
+    );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-terminal-text);
+  font-family: inherit;
+  font-size: inherit;
+  width: 100%;
+  caret-color: var(--color-primary);
+}
+
+.terminal-cursor {
+  display: none;
+}
+
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ============================================
+   ✨ Glitch Effect Styles
+   ============================================ */
+@keyframes glitch-skew {
+  0% { transform: skew(0deg); }
+  10% { transform: skew(-2deg); }
+  20% { transform: skew(2deg); }
+  30% { transform: skew(-1deg); }
+  40% { transform: skew(1deg); }
+  50% { transform: skew(0deg); }
+  60% { transform: skew(-2deg); }
+  70% { transform: skew(2deg); }
+  80% { transform: skew(-1deg); }
+  90% { transform: skew(1deg); }
+  100% { transform: skew(0deg); }
+}
+
+@keyframes glitch-noise {
+  0%, 100% { clip-path: inset(40% 0 61% 0); }
+  20% { clip-path: inset(92% 0 1% 0); }
+  40% { clip-path: inset(43% 0 1% 0); }
+  60% { clip-path: inset(25% 0 58% 0); }
+  80% { clip-path: inset(54% 0 7% 0); }
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.glitch-active {
+  animation: glitch-skew 200ms ease-in-out;
+}
+
+.glitch-active::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 100%;
+  height: 100%;
+  color: #00ffff;
+  animation: glitch-noise 200ms ease-in-out;
+  mix-blend-mode: screen;
+}
+
+.glitch-active::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 2px;
+  width: 100%;
+  height: 100%;
+  color: #ff0080;
+  animation: glitch-noise 200ms ease-in-out reverse;
+  mix-blend-mode: screen;
+}
+
+/* ============================================
+   🫧 Bubble/Particle Styles
+   ============================================ */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, 
+    rgba(244, 114, 182, 0.4), 
+    rgba(192, 132, 252, 0.2) 50%, 
+    transparent 70%);
+  animation: float-up linear infinite;
+  pointer-events: none;
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) scale(1);
+    opacity: 0;
+  }
+}
+
+/* ============================================
+   🌊 Wave Animation
+   ============================================ */
+@keyframes wave {
+  0%, 100% { transform: translateX(0) translateY(0); }
+  25% { transform: translateX(-5px) translateY(-3px); }
+  50% { transform: translateX(0) translateY(-5px); }
+  75% { transform: translateX(5px) translateY(-3px); }
+}
+
+.animate-wave {
+  animation: wave 3s ease-in-out infinite;
+}
+
+/* ============================================
+   💫 Glow Effects
+   ============================================ */
+.glow-pink {
+  box-shadow: 
+    0 0 20px var(--color-primary-glow),
+    0 0 40px rgba(244, 114, 182, 0.2),
+    0 0 60px rgba(244, 114, 182, 0.1);
+}
+
+.glow-text {
+  text-shadow: 
+    0 0 10px var(--color-primary-glow),
+    0 0 20px rgba(244, 114, 182, 0.3),
+    0 0 30px rgba(244, 114, 182, 0.2);
+}
+
+/* ============================================
+   🎴 Card Styles
+   ============================================ */
+.card-interactive {
+  position: relative;
+  background: var(--color-surface-glass);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card-interactive::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    rgba(244, 114, 182, 0.05) 50%,
+    transparent 100%
+  );
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.card-interactive:hover::before {
+  transform: translateX(100%);
+}
+
+.card-interactive:hover {
+  border-color: var(--color-border-glow);
+  box-shadow: 
+    0 20px 40px -15px rgba(244, 114, 182, 0.3),
+    0 0 0 1px var(--color-border-glow);
+  transform: translateY(-4px);
+}
+
+/* ============================================
+   🏷️ Tag Styles
+   ============================================ */
+.tag {
+  @apply px-3 py-1 text-xs font-medium rounded-full transition-all duration-300;
+  background: rgba(244, 114, 182, 0.1);
+  color: var(--color-primary);
+  border: 1px solid var(--color-border);
+}
+
+.tag:hover {
+  background: var(--color-primary);
+  color: var(--color-surface);
+  box-shadow: 0 0 15px var(--color-primary-glow);
+}
+
+.tag-active {
+  background: var(--color-primary);
+  color: var(--color-surface);
+  box-shadow: 0 0 15px var(--color-primary-glow);
+}
+
+/* ============================================
+   📦 Container & Layout
+   ============================================ */
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+/* ============================================
+   📝 Typography
+   ============================================ */
+.gradient-text {
+  background: var(--gradient-pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-animated {
+  background: linear-gradient(
+    90deg,
+    var(--color-primary) 0%,
+    var(--color-accent) 25%,
+    var(--color-primary-light) 50%,
+    var(--color-accent) 75%,
+    var(--color-primary) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 3s linear infinite;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* ============================================
+   🔘 Button Base Styles
+   ============================================ */
+.btn {
+  @apply px-6 py-3 font-medium rounded-xl transition-all duration-300;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: var(--gradient-pink);
+  color: white;
+  box-shadow: 0 4px 15px var(--color-primary-glow);
+}
+
+.btn-primary:hover {
+  box-shadow: 
+    0 6px 20px var(--color-primary-glow),
+    0 0 40px rgba(244, 114, 182, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--color-primary);
+  color: var(--color-surface);
+  box-shadow: 0 0 30px var(--color-primary-glow);
+}
+
+/* ============================================
+   🌀 Noise Texture Overlay
+   ============================================ */
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.03;
+  z-index: 9998;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+/* ============================================
+   🎬 Animation Utilities
+   ============================================ */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px var(--color-primary-glow);
+    opacity: 1;
+  }
+  50% { 
+    box-shadow: 0 0 40px var(--color-primary-glow), 0 0 60px rgba(244, 114, 182, 0.2);
+    opacity: 0.8;
+  }
+}
+
+/* Dolphin swimming keyframes for terminal */
+@keyframes dolphin-swim {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-3px) rotate(-2deg); }
+  50% { transform: translateY(0) rotate(0deg); }
+  75% { transform: translateY(3px) rotate(2deg); }
+}
+
+.dolphin-swim {
+  animation: dolphin-swim 0.5s ease-in-out infinite;
+}

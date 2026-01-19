@@ -1,0 +1,12 @@
+[
+  {
+    "id": "p1",
+    "title": "SCA CTF Platform",
+    "description": "동아리 자체 CTF 플랫폼. 웹 해킹, 리버싱, 포렌식 등 다양한 문제 제공",
+    "tags": ["웹개발", "CTF", "보안"],
+    "date": "2025-10",
+    "github": "https://github.com",
+    "demo": "https://example.com",
+    "members": ["김민수", "박준혁", "최은지"]
+  }
+]
