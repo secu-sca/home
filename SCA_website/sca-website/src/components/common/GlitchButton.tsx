@@ -24,8 +24,8 @@ export default function GlitchButton({
   const [noiseOffset, setNoiseOffset] = useState({ x: 0, y: 0 });
   const [slicePositions, setSlicePositions] = useState<number[]>([]);
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const glitchIntervalRef = useRef<NodeJS.Timeout | null>(null);
-  const noiseIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const glitchIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const noiseIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   // 글리치 색상 배열
   const glitchColors = [
