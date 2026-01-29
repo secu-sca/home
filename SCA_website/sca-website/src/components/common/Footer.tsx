@@ -52,9 +52,6 @@ export default function Footer() {
               세명컴퓨터고등학교 스마트보안솔루션과<br />
               사이버보안 동아리 (Security Cyber Aegis)
             </p>
-            <p className="text-sm italic" style={{ color: 'var(--color-primary)' }}>
-              "Pink Dolphin, Security First"
-            </p>
           </div>
 
           {/* 빠른 링크 */}
@@ -89,7 +86,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <motion.li whileHover={{ scale: 1.05, x: 5 }}>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/secu-sca"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm transition-colors hover:text-[var(--color-primary)]"
@@ -101,7 +98,7 @@ export default function Footer() {
               </motion.li>
               <motion.li whileHover={{ scale: 1.05, x: 5 }}>
                 <a
-                  href="mailto:sca@example.com"
+                  href="mailto:smc.secu.sca@gmail.com"
                   className="flex items-center gap-2 text-sm transition-colors hover:text-[var(--color-primary)]"
                   style={{ color: 'var(--color-text-muted)' }}
                 >

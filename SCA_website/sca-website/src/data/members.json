@@ -5,9 +5,7 @@
     "role": "부장",
     "grade": 3,
     "field": "포너블",
-    "description": "SCA 11기 회장. CTF를 좋아합니다.",
-    "github": "https://github.com",
-    "email": "example@email.com"
+    "description": "Discord: yeonba"
   },
   {
     "id": "m2",
@@ -15,26 +13,23 @@
     "role": "부부장",
     "grade": 3,
     "field": "리버싱",
-    "description": "리버싱과 포렌식 분야를 연구합니다.",
-    "github": "https://github.com"
+    "description": "Discord: phillipadventure"
   },
   {
     "id": "m2",
     "name": "박민기",
     "role": "부원",
     "grade": 3,
-    "field": "웹해킹, 네트워크해킹",
-    "description": "라즈페이 파이를 먹고싶습니다.",
-    "github": "https://github.com"
+    "field": "웹 해킹, 네트워크 해킹",
+    "description": ""
   },
   {
     "id": "m2",
     "name": "채우혁",
     "role": "부원",
     "grade": 3,
-    "field": "웹해킹",
-    "description": "웹해킹 장인입니다.",
-    "github": "https://github.com"
+    "field": "웹 해킹",
+    "description": ""
   },
   {
     "id": "m3",
@@ -42,7 +37,7 @@
     "role": "부원",
     "grade": 2,
     "field": "포너블, 리버싱",
-    "description": "한글 파일 악성코드 분석 장인입니다."
+    "description": ""
   },
   {
     "id": "m4",
@@ -50,7 +45,7 @@
     "role": "부원",
     "grade": 2,
     "field": "리버싱, 웹해킹",
-    "description": "원데이 분석하는걸 좋아합니다."
+    "description": ""
   },
   {
     "id": "m6",
@@ -58,6 +53,6 @@
     "role": "부원",
     "grade": 1,
     "field": "X",
-    "description": "X"
+    "description": ""
   }
 ]

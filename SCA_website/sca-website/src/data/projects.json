@@ -2,11 +2,17 @@
   {
     "id": "p1",
     "title": "SCA CTF Platform",
-    "description": "동아리 자체 CTF 플랫폼. 웹 해킹, 리버싱, 포렌식 등 다양한 문제 제공",
-    "tags": ["웹개발", "CTF", "보안"],
+    "description": "동아리 자체 CTF 플랫폼 구현 및 서버 운영",
+    "tags": ["웹개발", "CTF"],
     "date": "2025-10",
-    "github": "https://github.com",
-    "demo": "https://example.com",
-    "members": ["김민수", "박준혁", "최은지"]
+    "members": [""]
+  },
+  {
+    "id": "p1",
+    "title": "압축 프로그램 취약점 제보",
+    "description": "WinRAR 포함 압축 프로그램 보안 취약점 발굴 및 ZDI 제보",
+    "tags": ["화이트햇 스쿨 3기"],
+    "date": "2025-07",
+    "members": [""]
   }
 ]

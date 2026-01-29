@@ -10,26 +10,19 @@ interface MemberCardProps {
 export default function MemberCard({ member }: MemberCardProps) {
   const getRoleStyle = (role: string) => {
     switch (role) {
-      case '회장':
+      case '부장':
         return {
           bg: 'linear-gradient(135deg, rgba(250, 204, 21, 0.2), rgba(245, 158, 11, 0.2))',
           color: '#fbbf24',
           border: 'rgba(250, 204, 21, 0.4)',
           glow: 'rgba(250, 204, 21, 0.3)',
         };
-      case '부회장':
+      case '부부장':
         return {
           bg: 'linear-gradient(135deg, rgba(192, 132, 252, 0.2), rgba(168, 85, 247, 0.2))',
           color: '#c084fc',
           border: 'rgba(192, 132, 252, 0.4)',
           glow: 'rgba(192, 132, 252, 0.3)',
-        };
-      case '기술팀장':
-        return {
-          bg: 'linear-gradient(135deg, rgba(96, 165, 250, 0.2), rgba(59, 130, 246, 0.2))',
-          color: '#60a5fa',
-          border: 'rgba(96, 165, 250, 0.4)',
-          glow: 'rgba(96, 165, 250, 0.3)',
         };
       default:
         return {

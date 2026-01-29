@@ -7,33 +7,33 @@ import { ChevronDown, ChevronUp, Calendar, Clock, CheckCircle, Rocket, HelpCircl
 import { FAQ } from '../types';
 
 // 지원서 링크 (플레이스홀더)
-const APPLY_LINK = '[여기에_구글폼_링크]';
+const APPLY_LINK = 'https://forms.gle/wVhsjkdYeEJTosa38';
 
 const faqs: FAQ[] = [
   {
     question: '지원 자격이 어떻게 되나요?',
     answer:
-      '세명컴퓨터고등학교 스마트보안솔루션과 1, 2학년 학생이라면 누구나 지원할 수 있습니다. 보안에 대한 관심과 열정이 가장 중요합니다.',
+      '세명컴퓨터고등학교 스마트보안솔루션과 학생이라면 누구나 지원할 수 있습니다.',
   },
   {
     question: '프로그래밍을 못해도 지원할 수 있나요?',
     answer:
-      '네, 가능합니다. 기초적인 프로그래밍 지식이 있으면 좋지만, 열정과 배우려는 의지가 더 중요합니다. 입부 후 기초부터 함께 배울 수 있습니다.',
+      '네, 가능합니다. 기초적인 프로그래밍 지식이 있으면 좋지만, 열정과 배우려는 의지가 더 중요합니다.',
   },
   {
     question: '활동 시간은 어떻게 되나요?',
     answer:
-      '주 2회(화, 금) 방과 후 정기 활동이 있습니다. 대회 기간이나 프로젝트 진행 시에는 추가 모임이 있을 수 있습니다.',
+      '주 2회(월, 수) 방과 후 4시 30분부터 9시까지 정기 활동이 있습니다.',
   },
   {
     question: '선발 과정은 어떻게 되나요?',
     answer:
-      '지원서 제출 → 서류 검토 → 면접 → 최종 발표 순으로 진행됩니다. 면접에서는 지원 동기와 보안에 대한 관심도를 확인합니다.',
+      '지원서 제출 → 서류 검토 → 면접 → 최종 발표 순으로 진행됩니다.',
   },
   {
     question: '회비가 있나요?',
     answer:
-      '별도의 회비는 없습니다. 다만 외부 대회 참가 시 교통비 등은 개인 부담일 수 있습니다.',
+      '별도의 회비는 없습니다. 다만 외부 대회나 컨퍼런스 참가 시 교통비 등은 개인 부담일 수 있습니다.',
   },
 ];
 
@@ -179,7 +179,7 @@ export default function Apply() {
                     </h3>
                   </div>
                   <p className="gradient-text font-medium">
-                    2026년 3월 2일 ~ 3월 15일
+                    2026년 ??월 ??일 ~ 2026년 ??월 ??일
                   </p>
                 </InteractiveCard>
               </motion.div>
@@ -200,7 +200,7 @@ export default function Apply() {
                     </h3>
                   </div>
                   <p className="gradient-text font-medium">
-                    2026년 3월 18일 ~ 3월 20일
+                    2026년 ??월 ??일
                   </p>
                 </InteractiveCard>
               </motion.div>

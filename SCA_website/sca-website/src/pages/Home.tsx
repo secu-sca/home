@@ -39,7 +39,7 @@ export default function Home() {
     {
       icon: Shield,
       title: '보안 연구',
-      description: '웹 해킹, 시스템 보안, 네트워크 보안 등 다양한 분야 연구',
+      description: '웹 해킹, 시스템 보안, 리버스 엔지니어링 등 다양한 분야 연구',
       color: '#f472b6',
     },
     {
@@ -63,10 +63,10 @@ export default function Home() {
   ];
 
   const stats = [
-    { value: '20+', label: '활동 부원', icon: Users },
-    { value: '15+', label: '수상 실적', icon: Trophy },
-    { value: '10+', label: '프로젝트', icon: Code },
-    { value: '3+', label: '년 역사', icon: Sparkles },
+    { value: '30+', label: '활동 부원', icon: Users },
+    { value: '40+', label: '수상 실적', icon: Trophy },
+    { value: '20+', label: '취약점 제보', icon: Code },
+    { value: '10+', label: '년 역사', icon: Sparkles },
   ];
 
   return (

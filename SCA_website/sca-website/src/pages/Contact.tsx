@@ -24,32 +24,24 @@ export default function Contact() {
       icon: Mail,
       title: '이메일',
       description: '공식 문의 채널',
-      value: 'sca@example.com',
-      link: 'mailto:sca@example.com',
+      value: 'smc.secu.sca@gmail.com',
+      link: 'mailto:smc.secu.sca@gmail.com',
       color: '#f472b6',
     },
     {
       icon: Github,
       title: 'GitHub',
       description: '프로젝트 및 코드',
-      value: 'github.com/sca-smcc',
-      link: 'https://github.com',
+      value: 'https://github.com/secu-sca',
+      link: 'https://github.com/secu-sca',
       color: '#c084fc',
-    },
-    {
-      icon: MessageCircle,
-      title: '카카오톡 오픈채팅',
-      description: '실시간 질문 및 소통',
-      value: 'SCA 오픈채팅방',
-      link: 'https://open.kakao.com',
-      color: '#fbbf24',
     },
     {
       icon: MapPin,
       title: '위치',
       description: '세명컴퓨터고등학교',
-      value: '서울특별시 OO구 OO로 123',
-      link: 'https://maps.google.com',
+      value: '서울특별시 은평구 통일로92가길 33',
+      link: 'https://www.google.com/maps/place/%EC%84%B8%EB%AA%85%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90/data=!3m1!4b1!4m6!3m5!1s0x357c979732c6341b:0x4b30de891501a97!8m2!3d37.6275889!4d126.9231578!16s%2Fg%2F122hjgb0?entry=ttu&g_ep=EgoyMDI2MDEyNi4wIKXMDSoKLDEwMDc5MjA2N0gBUAM%3D.google.com',
       color: '#60a5fa',
     },
   ];
@@ -199,38 +191,6 @@ export default function Contact() {
         viewport={{ once: true }}
         variants={containerVariants}
       >
-        <div className="container-custom">
-          <div className="max-w-2xl mx-auto">
-            <motion.div variants={itemVariants}>
-              <InteractiveCard glowColor="rgba(244, 114, 182, 0.3)" className="text-center">
-                <motion.div
-                  className="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center"
-                  style={{
-                    background: 'linear-gradient(135deg, rgba(244, 114, 182, 0.2), rgba(192, 132, 252, 0.2))',
-                  }}
-                  animate={{ rotate: [0, 5, -5, 0] }}
-                  transition={{ duration: 4, repeat: Infinity }}
-                >
-                  <Clock className="w-8 h-8" style={{ color: 'var(--color-primary)' }} />
-                </motion.div>
-                <h3 className="text-lg font-semibold mb-4" style={{ color: 'var(--color-text)' }}>
-                  답변 가능 시간
-                </h3>
-                <div className="space-y-2" style={{ color: 'var(--color-text-muted)' }}>
-                  <p>
-                    <span className="gradient-text font-medium">평일:</span> 09:00 - 18:00
-                  </p>
-                  <p>
-                    <span className="gradient-text font-medium">주말/공휴일:</span> 휴무
-                  </p>
-                </div>
-                <p className="mt-4 text-sm" style={{ color: 'var(--color-text-muted)' }}>
-                  ※ 학교 일정에 따라 답변이 지연될 수 있습니다. 🐬
-                </p>
-              </InteractiveCard>
-            </motion.div>
-          </div>
-        </div>
       </motion.section>
     </div>
   );

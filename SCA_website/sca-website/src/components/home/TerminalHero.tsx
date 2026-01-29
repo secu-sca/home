@@ -193,34 +193,23 @@ SCA(Security Cyber Aegis)는 세명컴퓨터고등학교
 - 보안 프로젝트 개발 및 연구
 
 활동 분야:
-- 웹 해킹 & 모의침투
+- 웹 해킹
+- 시스템 해킹
 - 리버스 엔지니어링
-- 디지털 포렌식
-- 네트워크 보안
-- 암호학
 
 마스코트: 핑크 돌고래`;
 
 const CAT_AWARDS_TEXT = `
 === 수상 실적 (Recent) ===
 
-2025-11 | 정보보안 경진대회 대상
-2025-09 | Cyber Guardians CTF 2위
-2025-08 | 화이트햇 콘테스트 장려상
-2025-06 | 정보올림피아드 은상
-2025-05 | 교내 해킹방어대회 1위`;
+**공사중**`;
 
 const CAT_PROJECTS_TEXT = `
 === 프로젝트 목록 ===
 
-- SCA CTF Platform      [웹개발, CTF, 보안]
-- Vulnerability Scanner [Python, 보안, 자동화]
-- Network Packet Analyzer [네트워크, Python]
-- Forensic Toolkit      [포렌식, Python]
-- Secure Chat App       [암호학, React]
-- Phishing Detection    [JavaScript, 보안]`;
+**공사중**`;
 
-const APPLY_LINK = '[여기에_구글폼_링크]';
+const APPLY_LINK = 'https://forms.gle/wVhsjkdYeEJTosa38';
 
 interface TerminalHeroProps {
   onNavigate?: (path: string) => void;
@@ -413,7 +402,7 @@ export default function TerminalHero({ onNavigate }: TerminalHeroProps) {
             <span className="w-3 h-3 rounded-full bg-green-500 shadow-lg shadow-green-500/50"></span>
           </div>
           <span className="ml-4 text-sm font-mono" style={{ color: 'var(--color-text-muted)' }}>
-            sca@pink-dolphin:~
+            secu@sca:~
           </span>
         </motion.div>
 

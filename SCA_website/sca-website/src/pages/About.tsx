@@ -22,8 +22,14 @@ export default function About() {
     {
       icon: Shield,
       title: '웹 해킹',
-      description: 'OWASP Top 10, SQL Injection, XSS 등 웹 취약점 분석 및 모의해킹',
+      description: 'SQL Injection, XSS 등 웹 취약점 분석 및 모의해킹',
       color: '#f472b6',
+    },
+    {
+      icon: BookOpen,
+      title: '시스템 해킹',
+      description: '프로그램이나 운영체제의 보안 취약점 찾기',
+      color: '#c084fc',
     },
     {
       icon: Code,
@@ -37,19 +43,13 @@ export default function About() {
       description: '메모리 덤프 분석, 파일시스템 분석, 네트워크 포렌식',
       color: '#f472b6',
     },
-    {
-      icon: BookOpen,
-      title: '암호학',
-      description: '대칭키/비대칭키 암호, 해시 함수, 암호 분석',
-      color: '#c084fc',
-    },
   ];
 
   const schedule = [
-    { day: '매주 화요일', content: '정기 스터디 (웹 해킹, 리버싱 등)' },
-    { day: '매주 금요일', content: 'CTF 연습 및 워게임 풀이' },
-    { day: '월 1회', content: '외부 CTF 대회 참가' },
-    { day: '방학 중', content: '집중 프로젝트 및 합숙' },
+    { day: '매주 월요일, 수요일', content: '정기 스터디 (해킹 공부)' },
+    { day: '월 2~3회', content: '외부 CTF 대회 참가' },
+    { day: '방학 전', content: '교내 전공동아리 세미나 진행' },
+    { day: '방학 중', content: '집중 프로젝트 진행' },
   ];
 
   const goals = [
@@ -201,13 +201,6 @@ export default function About() {
                       호기심에서 시작하여 전문성으로 발전하고,
                       개인의 성장이 팀의 성장으로 이어지는 문화를 만들어갑니다.
                     </p>
-                    <motion.p
-                      className="gradient-text font-semibold"
-                      animate={{ opacity: [0.7, 1, 0.7] }}
-                      transition={{ duration: 2, repeat: Infinity }}
-                    >
-                      "핑크 돌고래처럼 자유롭게, 보안의 바다를 헤엄치다"
-                    </motion.p>
                   </motion.div>
                 </div>
               </InteractiveCard>

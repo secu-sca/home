@@ -1,26 +1,34 @@
 [
   {
     "id": "a1",
-    "title": "제 1회 감귤 CTF 청소년부 4위",
+    "title": "제 1회 감귤 CTF 청소년부 2위, 4위",
     "competition": "제 1회 감귤 CTF",
     "date": "2025-12",
-    "rank": "4위",
+    "rank": "2위, 4위",
     "category": "awards",
-    "participants": ["김필립"],
-    "organizer": "0xB1N4RY COMMUNITY, Dreamhack",
-    "description": "청소년부 4위"
+    "prize": "0xB1N4RY COMMUNITY, Dreamhack",
+    "description": ""
+  },
+    {
+    "id": "a1",
+    "title": "화이트햇스쿨 3기 CTF 최우수상, 장려상",
+    "competition": "화이트햇스쿨",
+    "date": "2025-11",
+    "rank": "2위, 4위",
+    "category": "awards",
+    "prize": "Dreamhack, WhiteHat School",
+    "description": ""
   },
   {
     "id": "a2",
-    "title": "2025 Layer7 CTF 고등부 1위",
+    "title": "2025 Layer7 CTF 고등부 1위, 3위",
     "competition": "2025 Layer7 CTF",
     "date": "2025-11",
-    "rank": "1위",
+    "rank": "1위, 3위",
     "category": "awards",
-    "participants": ["김필립"],
     "organizer": "선린인터넷고등학교 Layer7, Dreamhack, HSPACE, ENKI WHITEHAT",
     "prize": "학교장상",
-    "description": "고등부 1위"
+    "description": ""
   },
   {
     "id": "a3",
@@ -29,29 +37,27 @@
     "date": "2025-11",
     "rank": "1위",
     "category": "awards",
-    "participants": ["김필립"],
     "organizer": "교육부, KERIS, 정보보호영재교육원협의회, ENKI WHITEHAT",
     "prize": "교육부 장관상",
-    "description": "단체전 1위"
+    "description": ""
   },
   {
     "id": "a4",
-    "title": "제 11회 정보보안 경진대회 개인전 3위",
+    "title": "제 11회 정보보안 경진대회 개인전 2위, 3위",
     "competition": "교육부 정보보호영재교육원 제 11회 정보보안 경진대회",
     "date": "2025-10",
-    "rank": "3위",
+    "rank": "2위, 3위",
     "category": "awards",
-    "participants": ["김필립"],
     "organizer": "교육부, KERIS, 정보보호영재교육원협의회, ENKI WHITEHAT",
     "prize": "영재교육원장상",
-    "description": "개인전 3위"
+    "description": ""
   },
   {
     "id": "a5",
-    "title": "2025 사이버가디언즈 경진대회 6위",
+    "title": "2025 사이버가디언즈 경진대회 4위, 6위",
     "competition": "2025 사이버가디언즈 경진대회",
     "date": "2025-10",
-    "rank": "6위",
+    "rank": "4위, 6위",
     "category": "awards",
     "organizer": "한국정보기술연구원",
     "prize": "코리아사이버보안연합 이사장상",
@@ -71,12 +77,22 @@
   },
   {
     "id": "a7",
-    "title": "2025 아주대 COSS CTF",
+    "title": "2025 아주대 COSS CTF 3위",
     "competition": "2025 아주대 COSS CTF",
     "date": "2025",
-    "rank": "입상",
+    "rank": "3위",
     "category": "awards",
     "prize": "데이터보안사업단장상",
+    "description": ""
+  },
+    {
+    "id": "a7",
+    "title": "2025 YISF 6위",
+    "competition": "순천향대학교 정보보호학과 제23회 청소년 정보보호 페스티벌",
+    "date": "2025",
+    "rank": "6위",
+    "category": "awards",
+    "prize": "전국정보보호정책협의회장상",
     "description": ""
   },
   {
@@ -88,16 +104,13 @@
     "category": "awards",
     "description": ""
   },
-  {
-    "id": "a9",
-    "title": "2024 SMC CTF 1위",
-    "competition": "2024 세명컴퓨터고등학교 스마트보안솔루션과 SMC CTF",
-    "date": "2024-11",
-    "rank": "1위",
+    {
+    "id": "a8",
+    "title": "2025 서울여자대학교정보보호영재교육원 버그바운티 우수상",
+    "competition": "정보보호영재교육원",
+    "date": "2025",
+    "rank": "2위",
     "category": "awards",
-    "participants": ["김필립"],
-    "organizer": "세명컴퓨터고등학교",
-    "prize": "학교장상",
     "description": ""
   },
   {
@@ -438,12 +451,13 @@
   {"id":"v21","title":"CVE-2022-47437","competition":"CVE","date":"2022","rank":"취약점 제보","category":"vulnerability","description":""},
   {"id":"v22","title":"CVE-2022-47436","competition":"CVE","date":"2022","rank":"취약점 제보","category":"vulnerability","description":""},
   {"id":"c1","title":"2021 STEALIEN Security Leader 2기 합격","competition":"STEALIEN Security Leader","date":"2021","rank":"1명 합격","category":"certification","organizer":"STEALIEN","description":""},
-  {"id":"c2","title":"서울여자대학교 정보보호영재교육원 6기 합격","competition":"서울여자대학교 정보보호영재교육원","date":"2018","rank":"합격","category":"certification","organizer":"서울여자대학교","description":""},
-  {"id":"c3","title":"서울여자대학교 정보보호영재교육원 7기 합격","competition":"서울여자대학교 정보보호영재교육원","date":"2019","rank":"합격","category":"certification","organizer":"서울여자대학교","description":""},
-  {"id":"c4","title":"서울여자대학교 정보보호영재교육원 8기 합격","competition":"서울여자대학교 정보보호영재교육원","date":"2020","rank":"2명 합격","category":"certification","organizer":"서울여자대학교","description":""},
-  {"id":"c5","title":"서울여자대학교 정보보호영재교육원 9기 합격","competition":"서울여자대학교 정보보호영재교육원","date":"2021","rank":"4명 합격","category":"certification","organizer":"서울여자대학교","description":""},
-  {"id":"c6","title":"서울여자대학교 정보보호영재교육원 11기 합격","competition":"서울여자대학교 정보보호영재교육원","date":"2023","rank":"4명 합격","category":"certification","organizer":"서울여자대학교","description":""},
-  {"id":"c7","title":"서울여자대학교 정보보호영재교육원 12기 합격","competition":"서울여자대학교 정보보호영재교육원","date":"2024","rank":"1명 합격","category":"certification","organizer":"서울여자대학교","description":""},
+  {"id":"c2","title":"서울여자대학교 정보보호영재교육원 5기 합격","competition":"서울여자대학교 정보보호영재교육원","date":"2018","rank":"1명 합격","category":"certification","organizer":"서울여자대학교","description":""},
+  {"id":"c3","title":"서울여자대학교 정보보호영재교육원 6기 합격","competition":"서울여자대학교 정보보호영재교육원","date":"2019","rank":"1명 합격","category":"certification","organizer":"서울여자대학교","description":""},
+  {"id":"c4","title":"서울여자대학교 정보보호영재교육원 7기 합격","competition":"서울여자대학교 정보보호영재교육원","date":"2020","rank":"2명 합격","category":"certification","organizer":"서울여자대학교","description":""},
+  {"id":"c4","title":"서울여자대학교 정보보호영재교육원 8기 합격","competition":"서울여자대학교 정보보호영재교육원","date":"2021","rank":"1명 합격","category":"certification","organizer":"서울여자대학교","description":""},
+  {"id":"c5","title":"서울여자대학교 정보보호영재교육원 9기 합격","competition":"서울여자대학교 정보보호영재교육원","date":"2022","rank":"4명 합격","category":"certification","organizer":"서울여자대학교","description":""},
+  {"id":"c6","title":"서울여자대학교 정보보호영재교육원 11기 합격","competition":"서울여자대학교 정보보호영재교육원","date":"2024","rank":"4명 합격","category":"certification","organizer":"서울여자대학교","description":""},
+  {"id":"c7","title":"서울여자대학교 정보보호영재교육원 12기 합격","competition":"서울여자대학교 정보보호영재교육원","date":"2025","rank":"2명 합격","category":"certification","organizer":"서울여자대학교","description":""},
   {"id":"c8","title":"Best of the Best 8기 합격","competition":"Best of the Best","date":"2019","rank":"1명 합격","category":"certification","organizer":"한국정보기술연구원","description":""},
   {"id":"c9","title":"Best of the Best 9기 합격","competition":"Best of the Best","date":"2020","rank":"2명 합격","category":"certification","organizer":"한국정보기술연구원","description":""},
   {"id":"c10","title":"Best of the Best 10기 합격","competition":"Best of the Best","date":"2021","rank":"1명 합격","category":"certification","organizer":"한국정보기술연구원","description":""},
@@ -455,5 +469,6 @@
   {"id":"c16","title":"2021 현대오토에버 IT꿈나무 성장지원사업 합격","competition":"현대오토에버와 함께하는 특성화 고교생 IT꿈나무 성장지원사업","date":"2021","rank":"4명 합격","category":"certification","organizer":"현대오토에버","description":""},
   {"id":"c17","title":"2022 현대오토에버 IT꿈나무 성장지원사업 합격","competition":"현대오토에버와 함께하는 특성화 고교생 IT꿈나무 성장지원사업","date":"2022","rank":"2명 합격","category":"certification","organizer":"현대오토에버","description":""},
   {"id":"c18","title":"2024 현대오토에버 IT꿈나무 성장지원사업 합격","competition":"현대오토에버와 함께하는 특성화 고교생 IT 꿈나무 성장지원사업","date":"2024","rank":"2명 합격","category":"certification","organizer":"현대오토에버","description":""},
-  {"id":"c19","title":"빡공팟(P4C) 5기 시스템해킹트랙 합격","competition":"빡공팟(P4C)","date":"2024","rank":"1명 합격","category":"certification","organizer":"P4C","description":"시스템해킹트랙"}
+  {"id":"c19","title":"빡공팟(P4C) 5기 시스템해킹트랙 합격","competition":"빡공팟(P4C)","date":"2024","rank":"1명 합격","category":"certification","organizer":"P4C","description":"시스템해킹트랙"},
+  {"id":"c19","title":"S-개발자 3기 합격","competition":"S-개발자","date":"2025","rank":"1명 합격","category":"certification","organizer":"Kisia","description":""}
 ]
