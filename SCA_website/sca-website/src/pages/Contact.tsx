@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Github, MapPin, MessageCircle, Send, Clock } from 'lucide-react';
+import { Mail, Github, MapPin, Send } from 'lucide-react';
 import InteractiveCard from '../components/common/InteractiveCard';
 import { DolphinIcon } from '../components/common/DolphinIcon';
 import GlitchButton from '../components/common/GlitchButton';
