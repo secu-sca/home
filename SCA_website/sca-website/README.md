@@ -81,12 +81,6 @@ npm run preview
 
 ## 🎨 커스터마이징
 
-### 지원서 링크 변경
-다음 파일들에서 `[여기에_구글폼_링크]`를 실제 링크로 변경하세요:
-- `src/components/home/TerminalHero.tsx`
-- `src/pages/Home.tsx`
-- `src/pages/Apply.tsx`
-
 ### GitHub Pages 배포 설정
 `vite.config.ts`에서 `base` 값을 실제 레포지토리 이름으로 변경하세요:
 

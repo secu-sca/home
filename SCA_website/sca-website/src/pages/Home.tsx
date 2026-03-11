@@ -6,9 +6,6 @@ import GlitchButton from '../components/common/GlitchButton';
 import InteractiveCard from '../components/common/InteractiveCard';
 import { SwimmingDolphin } from '../components/common/DolphinIcon';
 
-// 지원서 링크 (플레이스홀더)
-const APPLY_LINK = '[여기에_구글폼_링크]';
-
 // 애니메이션 variants
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -218,17 +215,17 @@ export default function Home() {
               variants={itemVariants}
             >
               <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: 'var(--color-text)' }}>
-                핑크 돌고래와 함께할 준비가 되셨나요?
+                SCA의 활동을 더 둘러보세요
               </h2>
               <p className="mb-8" style={{ color: 'var(--color-text-muted)' }}>
-                SCA의 새로운 멤버가 되어 함께 성장해요!
+                동아리 소개부터 수상 내역, 연락처까지 한 번에 확인할 수 있습니다.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <GlitchButton href={APPLY_LINK} variant="primary" size="lg">
-                  지원하기
+                <GlitchButton onClick={() => navigate('/awards')} variant="primary" size="lg">
+                  수상 내역 보기
                 </GlitchButton>
-                <GlitchButton onClick={() => navigate('/about')} variant="outline" size="lg">
-                  더 알아보기
+                <GlitchButton onClick={() => navigate('/contact')} variant="outline" size="lg">
+                  문의하기
                 </GlitchButton>
               </div>
             </motion.div>

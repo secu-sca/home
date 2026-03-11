@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
@@ -8,7 +8,6 @@ import About from './pages/About';
 import Members from './pages/Members';
 import Awards from './pages/Awards';
 import Projects from './pages/Projects';
-import Apply from './pages/Apply';
 import Contact from './pages/Contact';
 
 // HashRouter 사용 - GitHub Pages SPA 새로고침 문제 해결
@@ -28,8 +27,8 @@ function App() {
               <Route path="/members" element={<Members />} />
               <Route path="/awards" element={<Awards />} />
               <Route path="/projects" element={<Projects />} />
-              <Route path="/apply" element={<Apply />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </AnimatePresence>
         </main>

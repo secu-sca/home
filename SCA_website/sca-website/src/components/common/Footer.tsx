@@ -62,7 +62,7 @@ export default function Footer() {
                 { to: '/about', label: '동아리 소개' },
                 { to: '/projects', label: '프로젝트' },
                 { to: '/awards', label: '수상 실적' },
-                { to: '/apply', label: '지원하기' },
+                { to: '/contact', label: '연락처' },
               ].map((link) => (
                 <motion.li key={link.to} whileHover="hover">
                   <motion.div variants={linkHoverVariants}>

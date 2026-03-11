@@ -143,7 +143,6 @@ const HELP_TEXT = `
 |  whoami        ->  About SCA                             |
 |  clear         ->  Clear terminal                        |
 |  ls            ->  List pages                            |
-|  open apply    ->  Open application form                 |
 |  cat about     ->  About the club                        |
 |  cat awards    ->  Award history                         |
 |  cat projects  ->  Project list                          |
@@ -178,7 +177,6 @@ const LS_TEXT = `
 ├── members    - 부원 소개  
 ├── awards     - 수상 실적
 ├── projects   - 프로젝트
-├── apply      - 지원하기
 └── contact    - 연락처`;
 
 const CAT_ABOUT_TEXT = `
@@ -208,8 +206,6 @@ const CAT_PROJECTS_TEXT = `
 === 프로젝트 목록 ===
 
 **공사중**`;
-
-const APPLY_LINK = 'https://forms.gle/wVhsjkdYeEJTosa38';
 
 interface TerminalHeroProps {
   onNavigate?: (path: string) => void;
@@ -329,11 +325,6 @@ export default function TerminalHero({ onNavigate }: TerminalHeroProps) {
         addLine('output', LS_TEXT);
         break;
 
-      case 'open apply':
-        addLine('output', '지원서 페이지를 새 탭에서 엽니다...');
-        window.open(APPLY_LINK, '_blank');
-        break;
-
       case 'cat about':
         addLine('output', CAT_ABOUT_TEXT);
         break;
@@ -352,7 +343,7 @@ export default function TerminalHero({ onNavigate }: TerminalHeroProps) {
       default:
         if (trimmedCmd.startsWith('cd ')) {
           const path = trimmedCmd.replace('cd ', '').trim();
-          if (['about', 'members', 'awards', 'projects', 'apply', 'contact'].includes(path)) {
+          if (['about', 'members', 'awards', 'projects', 'contact'].includes(path)) {
             addLine('output', `/${path} 페이지로 이동합니다...`);
             if (onNavigate) {
               setTimeout(() => onNavigate(`/${path}`), 500);
